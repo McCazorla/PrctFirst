@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:padding="5dip"/>
+    
+    <EditText android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:id="@+id/etNome"/>
+    
+    <TextView android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:padding="5dip"/>
+    
+    <EditText android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:id="@+id/etPass"/>
+    
+    <LinearLayout android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dip">
+        
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="login"
+            android:text="Login" />
+        
+        <Button android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="Limpar"
+        android:layout_weight="1"
+        android:id="@+id/btLimpar"
+        android:onClick="limpar"/>
+    </LinearLayout>
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Tens 3 tentativas"
+        android:id="@+id/tvtentos"/>
+</LinearLayout>
